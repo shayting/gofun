@@ -2,4 +2,3 @@ node_modules
 .env
 ngrok.exe
 note.md
-time.js
