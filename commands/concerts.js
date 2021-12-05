@@ -145,11 +145,11 @@ export default async (event) => {
         )
       }
       event.reply(concertFlex)
-      console.log(minDaysData)
     } else {
       event.reply('近期沒有活動')
     }
   } catch (error) {
+    console.log(error)
     event.reply('錯誤')
   }
 }
