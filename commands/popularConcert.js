@@ -48,15 +48,14 @@ export default async (event) => {
             contents: [
               {
                 type: 'text',
-                text: popularData[i].Name + '🔥HOT',
+                text: popularData[i].Name,
                 weight: 'bold',
                 size: 'lg',
                 wrap: true
               },
               {
                 type: 'separator',
-                color: '#43C499',
-                margin: 'sm'
+                color: '#43C499'
               },
               {
                 type: 'box',
@@ -64,8 +63,9 @@ export default async (event) => {
                 contents: [
                   {
                     type: 'text',
-                    text: popularData[i].Time.slice(0, -3),
-                    size: 'sm'
+                    text: popularData[i].Time.slice(0, -3) + ' 🔥人氣活動',
+                    size: 'sm',
+                    margin: 'sm'
                   }
                 ]
               },

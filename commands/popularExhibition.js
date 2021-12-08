@@ -1,5 +1,5 @@
 import { exhibitionData } from '../data.js'
-import { checkDate } from '../time.js'
+import { dateCount } from '../time.js'
 import template from '../template/eventFlex.js'
 
 export default async (event) => {
@@ -9,7 +9,7 @@ export default async (event) => {
   try {
   // 篩選正在進行中的展覽
     for (const exhibition of exhibitionData) {
-      if (checkDate(exhibition.startDate) <= 0 && checkDate(exhibition.endDate) >= 0) {
+      if (dateCount(exhibition.startDate) <= 0 && dateCount(exhibition.endDate) >= 0) {
         onTimeData.push(exhibition)
       }
     }
@@ -79,7 +79,7 @@ export default async (event) => {
                     contents: [
                       {
                         type: 'text',
-                        text: `${popularData[i].Start} - ${popularData[i].End}`,
+                        text: `📆 ${popularData[i].Start} - ${popularData[i].End}`,
                         margin: 'none'
                       }
                     ]
@@ -139,7 +139,7 @@ export default async (event) => {
             contents: [
               {
                 type: 'text',
-                text: '🔥 熱門活動🔥',
+                text: '✨ 熱門展覽 ✨',
                 size: 'xl',
                 margin: 'none',
                 color: '#ffffff',

@@ -53,7 +53,7 @@ export default async (event) => {
         concertFlex.contents.contents.push(
           {
             type: 'bubble',
-            size: 'kilo',
+            size: 'mega',
             body: {
               type: 'box',
               layout: 'vertical',
@@ -62,7 +62,7 @@ export default async (event) => {
                   type: 'text',
                   text: minDaysData[i].Name,
                   weight: 'bold',
-                  size: 'md',
+                  size: 'lg',
                   wrap: true
                 },
                 {
@@ -76,7 +76,7 @@ export default async (event) => {
                   contents: [
                     {
                       type: 'text',
-                      text: minDaysData[i].Time.slice(0, -3),
+                      text: '📆 ' + minDaysData[i].Time.slice(0, -3),
                       size: 'sm'
                     }
                   ]

@@ -32,9 +32,9 @@ bot.on('message', async (event) => {
       top5concert(event)
     } else if (event.message.text === '使用教學') {
       instruction(event)
-    } else if (event.message.text === '看展覽') {
+    } else if (event.message.text === '展覽') {
       quickExhibition(event)
-    } else if (event.message.text === '看演唱會') {
+    } else if (event.message.text === '演唱會') {
       quickConcert(event)
     }
   } else if (event.message.type === 'location') {
