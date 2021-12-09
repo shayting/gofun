@@ -36,6 +36,8 @@ bot.on('message', async (event) => {
       quickExhibition(event)
     } else if (event.message.text === '演唱會') {
       quickConcert(event)
+    } else {
+      event.reply('Hi~請點選下方按鈕。')
     }
   } else if (event.message.type === 'location') {
     exhibitions(event)
