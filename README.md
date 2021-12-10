@@ -7,10 +7,11 @@
 - [資料來源](#APIsource)
 
 ## <a name="addFriend"></a>加入好友
-- 請直接點擊 ->
+- 機器人ID： `@645lqllx`
+- 直接點擊 ->
 <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=645lqllx" style="background-color:green;color:white;display:inline-block;padding:3px;">加我好友</a>
 >
-- 或掃描 QR code 加入好友
+- 掃描 QR code 加入好友
 <br>
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/qrcode.png?raw=true" width="200">
 
