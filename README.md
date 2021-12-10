@@ -15,7 +15,7 @@
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/qrcode.png?raw=true" width="200">
 
 ## <a name="instruction"></a>使用說明
-#### 1. 提供五個距離你位址最近的5個展覽資訊
+#### 1. 提供五個距離你位址最近的展覽資訊
 - 點擊下方按鈕：看展覽 -> 傳送位置
 <br>
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/01.exhibition.jpg?raw=true" 
@@ -23,7 +23,7 @@ height="500">
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/02.exhibition-location.jpg?raw=true" height="500">
 <br>
 
-- 確認你的位址後按分享 -> 出現5個附近的展覽 -> 點選展覽 -> 提供你展覽的位址信息
+- 確認你的位址後按分享 -> 出現五個附近的展覽 -> 點選展覽 -> 提供你展覽的位址信息
 <br>
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/03.exhibition-location-share.jpg?raw=true" height="500">
 <img src="https://github.com/shayting/linebot-gofun/blob/master/ReadmeIMG/04.exhibition-event.jpg?raw=true" height="500">
