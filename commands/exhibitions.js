@@ -166,6 +166,7 @@ export default async (event) => {
     }
     event.reply(exhibitionFlex)
   } catch (error) {
+    console.log(error)
     event.reply('找不到資料')
   }
 }
