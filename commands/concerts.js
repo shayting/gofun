@@ -20,7 +20,6 @@ export default async (event) => {
         filterData.push(concert)
       }
     }
-    console.log(filterData)
     for (let i = 0; i < filterData.length; i++) {
       if (i < 5) {
         minDaysData.push({
