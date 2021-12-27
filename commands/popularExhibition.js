@@ -1,12 +1,18 @@
 import { exhibitionData } from '../data.js'
 import { dateCount } from '../time.js'
 import template from '../template/eventFlex.js'
+import util from 'util'
 
 export default async (event) => {
   const exhibitionFlex = JSON.parse(JSON.stringify(template))
   const onTimeData = []
   const popularData = []
   try {
+  // 判斷資料是否已抓到
+    if (exhibitionData.length === 0) {
+      event.reply('準備中~~請稍後再試')
+      return
+    }
   // 篩選正在進行中的展覽
     for (const exhibition of exhibitionData) {
       if (dateCount(exhibition.startDate) <= 0 && dateCount(exhibition.endDate) >= 0) {
@@ -159,6 +165,7 @@ export default async (event) => {
       )
     }
     event.reply(exhibitionFlex)
+    console.log(util.inspect(exhibitionFlex))
   } catch (error) {
     console.log(error)
   }
