@@ -8,6 +8,7 @@ import top5concert from './commands/popularConcert.js'
 import instruction from './commands/instruction.js'
 import quickExhibition from './commands/quickExhibition.js'
 import quickConcert from './commands/quickConcert.js'
+import { getData } from './data.js'
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -41,3 +42,5 @@ bot.on('message', async (event) => {
     exhibitions(event)
   }
 })
+
+getData()

@@ -6,7 +6,7 @@ export let concertData = []
 export let exhibitionData = []
 
 // 更新資料
-const getData = () => {
+export const getData = () => {
   axios.get('https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=17')
     .then(response => {
       concertData = response.data
@@ -20,7 +20,7 @@ const getData = () => {
 }
 
 // 機器人啟動時先更新資料
-getData()
+// getData()
 
 // 設定排程每日 0:00 更新
 schedule.scheduleJob('0 0 * * *', getData)
