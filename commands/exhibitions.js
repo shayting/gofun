@@ -14,6 +14,10 @@ export default async (event) => {
   const minDistanceData = []
   try {
     // 篩選正在進行中的展覽
+    if (exhibitionData.length === 0) {
+      event.reply('準備中請稍後再試')
+      return
+    }
     for (const exhibition of exhibitionData) {
       if (dateCount(exhibition.startDate) <= 0 && dateCount(exhibition.endDate) >= 0) {
         onTimeData.push(exhibition)
