@@ -2,6 +2,7 @@ import { exhibitionData } from '../data.js'
 import { distance } from '../distance.js'
 import { dateCount } from '../time.js'
 import template from '../template/eventFlex.js'
+import util from 'util'
 
 export default async (event) => {
   const exhibitionFlex = JSON.parse(JSON.stringify(template))
@@ -165,6 +166,7 @@ export default async (event) => {
       )
     }
     event.reply(exhibitionFlex)
+    console.log(util.inspect(exhibitionFlex))
   } catch (error) {
     console.log(error)
     event.reply('找不到資料')
