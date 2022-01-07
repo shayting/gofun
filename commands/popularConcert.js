@@ -81,7 +81,7 @@ export default async (event) => {
                   },
                   {
                     type: 'text',
-                    text: popularData[i].Location,
+                    text: popularData[i].Location || '未提供',
                     size: 'sm',
                     flex: 8,
                     wrap: true
@@ -101,7 +101,7 @@ export default async (event) => {
                   },
                   {
                     type: 'text',
-                    text: popularData[i].Address.trim(),
+                    text: popularData[i].Address.trim() || '未提供',
                     size: 'sm',
                     wrap: true,
                     flex: 8
@@ -123,7 +123,7 @@ export default async (event) => {
                 action: {
                   type: 'uri',
                   label: '售票網站',
-                  uri: popularData[i].Website
+                  uri: popularData[i].Website || '未提供'
                 },
                 color: '#43C499'
               }

@@ -112,7 +112,7 @@ export default async (event) => {
                       },
                       {
                         type: 'text',
-                        text: minDistanceData[i].Location,
+                        text: minDistanceData[i].Location || '未提供',
                         wrap: true,
                         color: '#666666',
                         size: 'sm',
@@ -135,7 +135,7 @@ export default async (event) => {
                       },
                       {
                         type: 'text',
-                        text: minDistanceData[i].Address,
+                        text: minDistanceData[i].Address || '未提供',
                         wrap: true,
                         color: '#666666',
                         size: 'sm',

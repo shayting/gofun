@@ -92,7 +92,7 @@ export default async (event) => {
                     },
                     {
                       type: 'text',
-                      text: minDaysData[i].Location,
+                      text: minDaysData[i].Location || '未提供',
                       size: 'sm',
                       flex: 8,
                       wrap: true
@@ -112,7 +112,7 @@ export default async (event) => {
                     },
                     {
                       type: 'text',
-                      text: minDaysData[i].Address.trim(),
+                      text: minDaysData[i].Address.trim() || '未提供',
                       size: 'sm',
                       wrap: true,
                       flex: 8
