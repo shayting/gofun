@@ -127,7 +127,7 @@ export default async (event) => {
                       },
                       {
                         type: 'text',
-                        text: popularData[i].Address,
+                        text: popularData[i].Address || '未提供',
                         wrap: true,
                         color: '#666666',
                         size: 'sm',
