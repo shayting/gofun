@@ -13,7 +13,7 @@ export default async (event) => {
       event.reply('準備中~~請稍後再試')
       return
     }
-  // 篩選正在進行中的展覽
+    // 篩選正在進行中的展覽
     for (const exhibition of exhibitionData) {
       if (dateCount(exhibition.startDate) <= 0 && dateCount(exhibition.endDate) >= 0) {
         onTimeData.push(exhibition)
