@@ -13,10 +13,10 @@ export default async (event) => {
     const filterData = []
     // 篩選最近的五個日期陣列
     const minDaysData = []
-    // const { data } = await axios.get('https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=17')
     for (const concert of concertData) {
       // 篩選縣市
-      if (concert.showInfo[0].location.includes(region)) {
+      // 加條件
+      if (concert.showInfo.length !== 0 && concert.showInfo[0].location.includes(region)) {
         filterData.push(concert)
       }
     }
